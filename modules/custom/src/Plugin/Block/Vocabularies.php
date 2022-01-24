@@ -22,12 +22,19 @@ class Vocabularies extends BlockBase {
     $entity_type_manager = \Drupal::entityTypeManager();
     $vocabularyStorage = $entity_type_manager->getStorage('taxonomy_vocabulary');
     $vocabularies = $vocabularyStorage->loadMultiple();
-    dump($vocabularies);
 
-
-    $build['content'] = [
-      '#markup' => $this->t('It works!'),
+    $build = [
+      '#attributes' => [
+        'class' => [
+          'vocabularies',
+        ],
+      ],
     ];
+
+    foreach($vocabularies as $vocabulary) {
+      $build[$vocabulary->id()] = $vocabulary->toLink($vocabulary->label());
+    }
+
     return $build;
   }
 
