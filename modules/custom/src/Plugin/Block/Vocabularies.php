@@ -32,7 +32,7 @@ class Vocabularies extends BlockBase {
     ];
 
     foreach($vocabularies as $vocabulary) {
-      $build[$vocabulary->id()] = $vocabulary->toLink($vocabulary->label());
+      $build[$vocabulary->id()] = $vocabulary->toLink($vocabulary->label())->toRenderable();
     }
 
     return $build;
