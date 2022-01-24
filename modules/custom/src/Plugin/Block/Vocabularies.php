@@ -19,6 +19,12 @@ class Vocabularies extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    $entity_type_manager = \Drupal::entityTypeManager();
+    $vocabularyStorage = $entity_type_manager->getStorage('taxonomy_vocabulary');
+    $vocabularies = $vocabularyStorage->loadMultiple();
+    dump($vocabularies);
+
+
     $build['content'] = [
       '#markup' => $this->t('It works!'),
     ];
