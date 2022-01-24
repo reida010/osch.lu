@@ -1,0 +1,25 @@
+name: STARTERKIT
+type: theme
+description: 'UIkit Sub-theme for Osch & Fils'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: uikit
+
+regions:
+  navbartop: 'Header Navigation Top Bar Menu'
+  navbarmenu: 'Header Navigation Bar Menu'
+  offcanvas: 'Offcanvas Navigation'
+  logo: 'Logo Block'
+  social: 'Social Block'
+  content: 'Content'
+  sidebar_first: 'Left Sidebar'
+  footer_left: 'Footer (left)'
+  footer_middle_left: 'Footer (middle left)'
+  footer_middle_right: 'Footer (middle right)'
+  footer_right: 'Footer (right)'
+  footer_extra: 'Footer (bottom right)'
+  footer_copyright: 'Footer (copyright bottom left)'
+
+libraries:
+  - STARTERKIT/global-style
+  - STARTERKIT/uikit

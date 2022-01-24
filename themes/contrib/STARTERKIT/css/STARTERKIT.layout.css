@@ -1,0 +1,204 @@
+/* Macro arrangement of a web page, including any grid systems. */
+/* ----------- HEADER -------------- */
+/* logo */
+.region-logo img {
+  max-width: 60%;
+}
+#logo p,
+#logo .uk-margin  {
+  margin:0 !important;
+}
+/* topbar level 1 */
+.region-social {
+  display: flex;
+  align-items: baseline;
+  margin-left:20px;
+}
+.block-language {
+  display: flex;
+  align-items: baseline;
+  margin-left:20px;
+}
+.region-social   a,
+.region-navbartop .uk-navbar-nav>li>a,
+.region-navbartop a   {
+  color:white;
+}
+.block-social-media-links  a  {
+  background: white;
+  color:#00AEEF;
+  padding: 10px 10px 0 10px;
+}
+.block-social-media-links  a span {
+  font-size: 1.8em;
+}
+.social-media-links--platforms {
+  margin-top:20px;
+}
+
+.region-language li {
+  float:left;
+  margin-top:0 !important;
+}
+.region-language li:nth-child(n+2) {
+border-left: 2px solid white;
+}
+/* topbar level 2 -- NAVIGATION */
+.menu-level-1  > .menu-item {
+  border-right:2px solid #00AEEF;
+  position:relative;
+}
+.menu-level-1  > .menu-item:last-child {
+  border-right: none;
+}
+.menu-level-1  > .menu-item a {
+  min-height: 30px;
+  font-size:20px;
+  line-height:29px;
+}
+.menu-level-1  > .menu-item > a {
+  font-size:22px;
+}
+.menu-level-1 .sub-content .icon-menu {
+  width:20%;
+  position: absolute;
+  top: -20px;
+}
+.uk-navbar-dropdown-grid {
+  width:90vw;
+  margin-left:5vw;
+  padding-top: 25px;
+}
+.menu-item a.is-active.uk-open {
+  color:#00AEEF;
+}
+.menu-level-1 > .menu-item > .sub-content {
+  margin-top: 30px;
+}
+.sub-content .uk-navbar-nav {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.uk-navbar-dropdown.uk-open,
+.uk-navbar-dropdown {
+  background: none !important;
+}
+.uk-navbar-dropdown-dropbar {
+  margin-top: 25px;
+  border-radius: 10px;
+  width: 95vw;
+  background: none !important;
+  top:100px !important;
+}
+/* ----------- CONTENT -------------- */
+/* SLIDESHOW */
+.section-slideshow h3 {
+  font-size:60px;
+  color:white;
+  background-color: #00AEEF;
+  font-weight:bold;
+}
+.section-slideshow p {
+  color:white;
+}
+
+.section-slideshow .uk-slideshow-items {
+  overflow: hidden;
+  min-height: 600px !important;
+  padding-bottom:25px;
+}
+.uk-slideshow-container {
+  border-bottom: 15px solid #00AEEF;
+}
+.uk-slideshow-nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.uk-dotnav>*>* {
+  background-color:white;
+  /* border: white; */
+}
+.uk-dotnav>.uk-active>* {
+  border-color: white;
+}
+/* CONTENT */
+.section-intro {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.section-intro .uk-margin img {
+  max-width: 50%;
+}
+/* block / view */
+.product-section {
+  background: #32bef2 url('/sites/default/files/2022-01/alveole.png') repeat-x;
+  background-size: contain;
+  padding-top: 10vh;
+  /*  linear-gradient(to top, #4EC6F3, #4EC6F3),  */
+}
+.product-section h2 {
+  font-size:40px;
+  line-height: 29px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:white;
+}
+
+.reference-section {
+  background: white  url('/sites/default/files/2022-01/barriere_0_0.png')  bottom left repeat-x;
+  padding-top: 10vh;
+ /* opacity: 0.14; */
+}
+.reference-section h2 {
+  font-size:40px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color:#00AEEF;
+  font-weight: bold;
+}
+.reference-section h3 a {
+  font-size:20px;
+  line-height: 29px;
+  font-weight: bold;
+  color:white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.reference-section .uk-slider-items .uk-panel {
+ position: relative;
+}
+.reference-section .uk-slider-items .uk-panel .uk-overlay {
+  height: 100%;
+}
+.reference-section .uk-slider-items .uk-panel .uk-overlay h3 {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+}
+.reference-section .uk-slider-items .uk-panel .uk-overlay img {
+  position: absolute;
+  top: 8vh;
+  left: 12vw;
+  max-width: 15%;
+}
+/* FOOTER */
+.footer-menu h2 {
+  font-size:20px;
+  line-height: 23px;
+  font-weight: bold;
+  color:white;
+}
+footer .uk-navbar-nav>li>a,
+.footer-menu a
+.footer-menu .menu-item a {
+  font-size:16px;
+  line-height: 20px;
+ /* font-weight: bold; */
+  color:white !important;
+}
+.footer-right > *,
+.footer-left > *,
+.copyright > * {
+  color:white !important;
+}

@@ -1,0 +1,45 @@
+fonts:
+  version: 0.1
+  css:
+    base:
+      css/fonts.css: {}
+      'https://use.typekit.net/wxm1drm.css' : { type: external }
+
+
+uikit:
+  remote: https://getuikit.com/
+  version: 3.5.9
+  license:
+    name: MIT
+    url: https://github.com/uikit/uikit/blob/develop/LICENSE.md
+    gpl-compatible: true
+  css:
+    base:
+      /libraries/uikit/css/uikit.min.css: { minified: true }
+  js:
+    /libraries/uikit/js/uikit.min.js: { minified: true }
+    /libraries/uikit/js/uikit-icons.min.js: { minified: true }
+  dependencies:
+    - core/jquery 
+    - core/jquery.once
+    - core/drupal
+    - STARTERKIT/fonts
+
+global-style:
+  version: VERSION
+  css:
+    base:
+      css/STARTERKIT.base.css: {}
+    layout:
+      css/STARTERKIT.layout.css: {}
+    component:
+      css/STARTERKIT.component.css: {}
+    theme:
+      css/STARTERKIT.theme.css: {}
+  js:
+    js/STARTERKIT.theme.js: {}
+  dependencies:
+    - STARTERKIT/uikit
+    - core/jquery
+    - core/drupal
+
